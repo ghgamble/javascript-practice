@@ -8,19 +8,25 @@
 
 function reverse(str) {
       // First Solution
-      // const arr = str.split('');
-      // arr.reverse();
-      // return arr.join('');
+      // var splitString = str.split('');
+      // var reverseArray = splitString.reverese();
+      // var joinArray = reverseArray.join('');
+      // return joinArray;
 
       //Second Solution
       // return str.split('').reverse().join('');
 
       //Third Solution
-      let reversed = '';
-      for (let character of str) {
-            reversed = character + reversed;
+      var newString = '';
+      for (var i = str.length - 1; i >= 0; i--) {
+            newString += stri[i];
       }
-      return reversed;
+      return newString;
+
+      //Fourth Solution
+      // return str.split('').reduce((reversed, character) => {
+      //       return character + reversed;
+      // }, '');
 }
 
 module.exports = reverse;
