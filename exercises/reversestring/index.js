@@ -9,7 +9,7 @@
 function reverse(str) {
       // First Solution
       // var splitString = str.split('');
-      // var reverseArray = splitString.reverese();
+      // var reverseArray = splitString.reverse();
       // var joinArray = reverseArray.join('');
       // return joinArray;
 
@@ -17,13 +17,18 @@ function reverse(str) {
       // return str.split('').reverse().join('');
 
       //Third Solution
-      var newString = '';
-      for (var i = str.length - 1; i >= 0; i--) {
-            newString += stri[i];
-      }
-      return newString;
+      // var newString = '';
+      // for (var i = str.length - 1; i >= 0; i--) {
+      //       newString += stri[i];
+      // }
+      // return newString;
 
       //Fourth Solution
+      for (let character of str) {
+            reversed = character + reversed;
+      }
+
+      //Fifth Solution
       // return str.split('').reduce((reversed, character) => {
       //       return character + reversed;
       // }, '');
